@@ -81,6 +81,7 @@ def remove_stopwords(text):
     words = word_tokenize(text)
     return " ".join([word for word in words if word not in stopword])
 
+
 def calculate_similarity(resume_text,job_description):
     resume_processed = remove_stopwords(clean_text(resume_text))
     job_processed = remove_stopwords(clean_text(job_description))
@@ -94,7 +95,7 @@ def calculate_similarity(resume_text,job_description):
 # main App
 
 def main():
-    uploaded_file = st.file_uploader("Upload your resume (PDF)",type=['pdf'])
+    uploaded_file = st.file_uploader("Upload your resume (PDF)",type=['pdf','docx','doc','txt'])
     job_description =  st.text_area("Paste the job description",height=200)
 
 

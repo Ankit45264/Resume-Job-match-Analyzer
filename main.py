@@ -95,7 +95,7 @@ def calculate_similarity(resume_text,job_description):
 # main App
 
 def main():
-    uploaded_file = st.file_uploader("Upload your resume (PDF)",type=['pdf','docx','doc','txt'])
+    uploaded_file = st.file_uploader("Upload your resume (PDF)",type=['pdf','docx'])
     job_description =  st.text_area("Paste the job description",height=200)
 
 

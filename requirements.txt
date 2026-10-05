@@ -5,5 +5,4 @@ matplotlib
 seaborn
 scikit-learn
 PyPDF2
-collections
 nltk
